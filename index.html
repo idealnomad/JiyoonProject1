@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPage</title>
+    <style>
+        body {text-align: center; centerbackground-color: bisque; width:800px;}
+        header {}
+        article img {height: 100px; width: 100px; float: left;}
+        nav ul {word-spacing: 20px;}
+        nav ul li {display: inline;}
+        a {text-decoration: none; color: black; letter-spacing: 5px;}
+        section#Hobbies {background-image: url(/JiyoonProject1/fifaicon/웨인루니.png);} 
+        input {float:left}
+        #article1 {background-image: url(/images_all/html5_logo.png); }
+        #article2 {background-image: url(/images_all/chatGPT.png); }
+        #article3 {background-image: url(/images_all/python.jfif); }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MyFirstPage</h1>
+    </header>
+
+    <nav>
+    <ul>
+        <li><a href="#" onmouseover="enlargeLink(this)";  onmouseout= "shrinkLink(this)"; onclick="scrollToSection1(this)"> AboutMe</a></li>
+        <li><a href="#" onmouseover="enlargeLink(this)";  onmouseout= "shrinkLink(this)"; onclick="scrollToSection2(this)"> Hobbies</a></li>
+        <li><a href="#" onmouseover="enlargeLink(this)";  onmouseout= "shrinkLink(this)"; onclick="scrollToSection3(this)"> CV</a></li>
+        <li><a href="#" onmouseover="enlargeLink(this)";  onmouseout= "shrinkLink(this)"; onclick="scrollToSection4(this)"> ContactMe</a></li>
+    </ul>
+    <script>
+        function enlargeLink(linkElement) {
+            linkElement.style.fontSize = '2em';
+        }
+
+        function shrinkLink(linkElement) {
+            linkElement.style.fontSize = '1em';
+        }
+    </script>
+    <script>
+        function scrollToSection1(t){
+        document.getElementById('AboutMe').scrollIntoView({ behavior: 'smooth' });   
+        }         
+        function scrollToSection2(t){
+        document.getElementById('Hobbies').scrollIntoView({ behavior: 'smooth' });   
+        }   
+        function scrollToSection3(t){
+        document.getElementById('CV').scrollIntoView({ behavior: 'smooth' });   
+        }   
+        function scrollToSection4(t){
+        document.getElementById('ContactMe').scrollIntoView({ behavior: 'smooth' });   
+        }   
+    </script>
+    </nav>
+
+    <section id="AboutMe"> 
+        <img src="/images_all/programmer.png">
+        <article>
+            <h2>AboutMe</h2>
+            Hello, My name is Jiyoon Ha. 
+            I`m Web Publisher And Web Front-End Developer.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe veritatis aperiam accusantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium doloremque quos quis est officiis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, omnis quibusdam.
+            I`m Web Publisher And Web Front-End Developer.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe veritatis aperiam accusantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium doloremque quos quis est officiis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, omnis quibusdam.
+            I`m Web Publisher And Web Front-End Developer.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe veritatis aperiam accusantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium doloremque quos quis est officiis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, omnis quibusdam.
+        </article>
+    </section>
+
+    
+    <section id="Hobbies">
+        <h2>Hobbies</h2>
+        My Hobbies are collecting FIFA cards, playing games, and basketball
+        I`m Web Publisher And Web Front-End Developer.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe veritatis aperiam accusantium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium doloremque quos quis est officiis.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, omnis quibusdam.  I`m Web Publisher And Web Front-End Developer.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe veritatis aperiam accusantium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium doloremque quos quis est officiis.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, omnis quibusdam.
+        I`m Web Publisher And Web Front-End Developer.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe veritatis aperiam accusantium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium doloremque quos quis est officiis.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, omnis quibusdam.
+    </section>
+
+
+    <section id="CV">  
+        <h2>CV</h2>
+        <article id ="article1" style="width: 270px; height: 220px ;">
+            <h2>HTML CSS Javascript</h2>
+        </article>
+        <article id ="article2" style="width: 270px; height: 220px ;">
+            <h2>ChatGPT</h2>
+        </article>
+        <article id ="article3" style="width: 260px; height: 220px ;">
+            <h2>Java Python</h2>
+        </article>
+    </section>
+
+ 
+            
+
+    <section id="ContactMe">
+        <h2>ContactMe</h2>
+            <img src="/images_all/gitcat.webp" style="width: 300px; height: 200px;">
+
+            <form action="/ch03_html_form_p86_p110/iframe3.html" method="get">
+                <table border="1" >
+                  <tr>
+                    <td>Name</td>
+                    <td><input type="text" id="name" name="name" required></td>
+                  </tr>
+                  <tr>
+                    <td>Phone Number</td>
+                    <td><input type="tel" id="phone" name="phone" required></td>
+                  </tr>
+                  <tr>
+                    <td>Email</td>
+                    <td><input type="email" id="email" name="email" required></td>
+                  </tr>
+                </table>
+            <input type="submit" value="제출">
+            </form>
+             <hr>
+    </section>
+   
+<footer>
+    This is MyFirstPage all rights belong to jiyoon4261@gmail.com
+</footer>
+
+
+
+</body>
+</html>
+
